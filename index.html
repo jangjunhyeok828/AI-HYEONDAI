@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary":"#001839","on-background":"#131b2e","on-secondary-fixed":"#00201a","on-tertiary-fixed-variant":"#005236","on-surface-variant":"#43474f","tertiary-container":"#003522","outline":"#747780","primary-fixed-dim":"#abc7ff","error":"#ba1a1a","surface-bright":"#faf8ff","outline-variant":"#c4c6d1","tertiary-fixed-dim":"#4edea3","inverse-primary":"#abc7ff","primary-fixed":"#d7e3ff","secondary-fixed":"#7cf8da","error-container":"#ffdad6","inverse-surface":"#283044","on-error-container":"#93000a","on-tertiary-fixed":"#002113","surface":"#faf8ff","on-primary-container":"#7695ce","surface-tint":"#3f5e94","on-tertiary":"#ffffff","on-surface":"#131b2e","on-primary":"#ffffff","tertiary":"#001e11","secondary-fixed-dim":"#5ddbbe","surface-variant":"#dae2fd","secondary-container":"#7cf8da","inverse-on-surface":"#eef0ff","surface-container-high":"#e2e7ff","on-primary-fixed":"#001b3f","on-secondary":"#ffffff","on-tertiary-container":"#00aa75","on-primary-fixed-variant":"#25467a","surface-container-lowest":"#ffffff","background":"#faf8ff","surface-container":"#eaedff","surface-container-low":"#f2f3ff","secondary":"#006b59","on-error":"#ffffff","on-secondary-container":"#00725f","surface-container-highest":"#dae2fd","surface-dim":"#d2d9f4","tertiary-fixed":"#6ffbbe","primary-container":"#002c5f","on-secondary-fixed-variant":"#005143"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter":"1.5rem","margin":"3rem","space-lg":"1.5rem","gutter-mobile":"1rem","space-md":"1rem","margin-mobile":"1.25rem"},"fontFamily":{"headline-lg":["Hanken Grotesk"],"label-md":["Hanken Grotesk"],"headline-lg-mobile":["Hanken Grotesk"],"headline-sm":["Hanken Grotesk"],"headline-xl":["Hanken Grotesk"],"stat-metric":["Hanken Grotesk"],"body-md":["Hanken Grotesk"],"label-lg":["Hanken Grotesk"],"body-sm":["Hanken Grotesk"],"headline-xl-mobile":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"headline-md":["Hanken Grotesk"],"label-caps":["Hanken Grotesk"]},"fontSize":{"headline-lg":["40px",{"lineHeight":"52px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-xl":["56px",{"lineHeight":"68px","letterSpacing":"-0.02em","fontWeight":"700"}],"stat-metric":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"22px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-xl-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm font-bold tracking-tight">H</div><div class="flex flex-col"><span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Hyundai Motor Company</span><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary-container">HYUNDAI ESG 인포그래픽 대시보드</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="text-primary-container font-semibold bg-surface-container-high rounded-lg"><a aria-current="page" class="px-space-sm py-space-xs transition-colors text-primary-container font-semibold bg-surface-container-high rounded-lg" data-path="overview-kpi" href="#">종합 개황 &amp; KPI</a><a class="font-label-lg text-label-lg px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="e-carbon-roadmap" href="#">E 환경 &amp; 탄소 로드맵</a><a class="font-label-lg text-label-lg px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="s-supply-chain-social" href="#">S 공급망 &amp; 사회적 가치</a><a class="font-label-lg text-label-lg px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="g-governance-materiality" href="#">G 거버넌스 &amp; 이중 중대성</a><a class="font-label-lg text-label-lg px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="infographic-report-download" href="#">인포그래픽 리포트 다운로드</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center bg-surface-container px-space-xs py-space-xs rounded-lg"><span class="font-label-caps text-label-caps text-on-surface-variant px-space-xs">회계연도</span><div class="bg-surface-container-lowest px-space-sm py-space-xs rounded font-label-md text-label-md text-primary-container font-semibold">2025-2026</div></div><button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors font-label-md text-label-md"><span class="material-symbols-outlined text-secondary text-[18px]">tune</span><span class="hidden md:inline">Interactive Mode</span></button><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container hover:bg-primary text-on-primary transition-colors font-label-md text-label-md"><span class="material-symbols-outlined text-[18px]">download</span><span>Quick Export</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Command & Perspective Filter Bar -->
+<div class="w-full bg-surface-container-low px-gutter lg:px-margin py-space-md shadow-sm">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider">VERIFIED SUSTAINABILITY INTELLIGENCE</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container">ESG 공시 &amp; 지속가능경영 인포그래픽 콘솔</span>
+</div>
+<div class="hidden lg:flex items-center bg-surface-container-high px-space-sm py-1 rounded-full text-on-surface-variant font-label-md text-label-md">
+<span>GRI Standards • ISSB • TCFD 기준 종합</span>
+</div>
+</div>
+<!-- Segmented Pillar Tab Bar -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl shadow-sm gap-1 overflow-x-auto">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">dashboard</span>
+<span>전체 통합뷰</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-on-primary/20 text-on-primary text-[10px]">ALL</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>E 환경 • 탄소</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">2045</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+<span>S 공급망 • 인권</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">CSDDD</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>G 이사회 • 보상</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[10px]">87.5%</span>
+</button>
+</div>
+</div>
+</div>
+<div class="w-full px-gutter lg:px-margin py-space-lg max-w-[1280px] mx-auto space-y-space-xl">
+<!-- 1. Top KPI Summary Cards (Executive Overview) -->
+<section class="space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold">EXECUTIVE KPI SNAPSHOT</span>
+<h2 class="font-headline-md text-headline-md font-bold text-primary-container">2025 경영 실적 및 지속가능 임팩트 핵심 지표</h2>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>제3자 검증 완료 (DNV GL 기준)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- KPI 1: Global Sales -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps font-semibold">GLOBAL VOLUME</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">directions_car</span>
+</div>
+<div class="font-stat-metric text-stat-metric text-primary-container font-bold tracking-tight">4,138,389<span class="text-label-lg font-normal text-on-surface-variant ml-1">대</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">2025 글로벌 연간 완성차 판매량</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="flex items-center justify-between text-label-caps font-label-caps mb-1 text-on-surface-variant">
+<span>목표 달성률</span>
+<span class="text-secondary font-bold">101.4%</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+</div>
+<!-- KPI 2: Financial Performance -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps font-semibold">FINANCIAL VALUE</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]">account_balance</span>
+</div>
+<div class="font-stat-metric text-stat-metric text-primary-container font-bold tracking-tight">186.2<span class="text-label-lg font-normal text-on-surface-variant ml-1">조 원</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">매출액 • 영업이익 <strong class="text-primary-container">11.4조 원</strong></p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant">영업이익률</span>
+<span class="font-label-md text-label-md font-bold px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container">6.12% 달성</span>
+</div>
+</div>
+<!-- KPI 3: Electrified Vehicle Sales -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all relative overflow-hidden">
+<div class="absolute -right-3 -bottom-3 text-secondary/5 font-bold font-headline-xl text-[90px] select-none pointer-events-none">+27%</div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-semibold">ELECTRIFICATION</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">bolt</span>
+</div>
+<div class="font-stat-metric text-stat-metric text-primary-container font-bold tracking-tight">961,812<span class="text-label-lg font-normal text-on-surface-variant ml-1">대</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">친환경 전동화 차량 판매 총합</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">trending_up</span>
+<span class="font-label-md text-label-md text-secondary font-bold">+27.0% 전년 동기대비 급증</span>
+</div>
+</div>
+<!-- KPI 4: GHG Social Cost Saved -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-caps text-label-caps font-semibold">ECO SOCIAL IMPACT</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">nature_people</span>
+</div>
+<div class="font-stat-metric text-stat-metric text-primary-container font-bold tracking-tight">6,954.5<span class="text-label-lg font-normal text-on-surface-variant ml-1">억 원</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">온실가스 사회적 비용 절감액</p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-caps text-label-caps text-on-surface-variant">
+            EV 262,442대 운행 • 1,986,351 tCO2-eq 감축
+          </div>
+</div>
+<!-- KPI 5: RE100 Overseas Progress -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-caps text-label-caps font-semibold">RE100 OVERSEAS</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]">solar_power</span>
+</div>
+<div class="font-stat-metric text-stat-metric text-primary-container font-bold tracking-tight">88<span class="text-stat-metric text-secondary font-normal ml-0.5">%</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">해외 전 사업장 재생에너지 전환</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary font-bold">유럽 • 북미 • 인도</span>
+<span class="font-label-md text-label-md px-1.5 py-0.5 rounded bg-surface-container-high text-primary-container font-bold">100% 완료</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Dual Column Infographic Section: Powertrain & Emissions Architecture -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Chart 1: Powertrain Composition Radial & 2030 Gauge -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-1 h-5 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider">PILLAR E • INFOGRAPHIC 01</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">전동화 라인업 961,812대</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary-container mb-space-xs">파워트레인 전동화 포트폴리오 구조 &amp; 2030 마일스톤</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">EV 캐즘(Chasm) 완충을 위한 HEV/PHEV 유연 대응 및 중장기 330만 대 친환경차 달성 로드맵</p>
+<div class="grid grid-cols-1 sm:grid-cols-12 gap-space-md items-center py-space-sm">
+<!-- Inline SVG Donut Chart -->
+<div class="sm:col-span-6 flex flex-col items-center justify-center relative">
+<svg class="w-48 h-48 -rotate-90 transform" viewbox="0 0 160 160">
+<circle cx="80" cy="80" fill="none" r="62" stroke="#eaedff" stroke-width="18"></circle>
+<!-- HEV/PHEV: 70.6% -> circumference ~389.5, dash 275 -->
+<circle cx="80" cy="80" fill="none" r="62" stroke="#002c5f" stroke-dasharray="275 390" stroke-dashoffset="0" stroke-linecap="round" stroke-width="18"></circle>
+<!-- EV: 28.7% -> dash 111.8 -->
+<circle cx="80" cy="80" fill="none" r="62" stroke="#00a389" stroke-dasharray="112 390" stroke-dashoffset="-277" stroke-linecap="round" stroke-width="18"></circle>
+<!-- FCEV: 0.7% -> dash 2.7 -->
+<circle cx="80" cy="80" fill="none" r="62" stroke="#7cf8da" stroke-dasharray="8 390" stroke-dashoffset="-390" stroke-linecap="round" stroke-width="18"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+<span class="font-label-caps text-label-caps text-on-surface-variant">TOTAL</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container leading-none">96.1만</span>
+<span class="font-label-caps text-label-caps text-secondary font-bold mt-1">+27.0% YoY</span>
+</div>
+</div>
+<!-- Legends and Details -->
+<div class="sm:col-span-6 space-y-space-sm">
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary-container">하이브리드 • PHEV</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">주력 수익성 견인</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-md text-label-md font-bold text-primary-container">679,017 대</div>
+<span class="font-label-caps text-label-caps text-secondary font-bold">70.6%</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary-container">순수전기차 (EV)</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">E-GMP 플랫폼 주도</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-md text-label-md font-bold text-primary-container">275,669 대</div>
+<span class="font-label-caps text-label-caps text-secondary font-bold">28.7%</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed"></span>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary-container">수소전기차 (FCEV)</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">넥쏘 • 상용 엑시언트</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-md text-label-md font-bold text-primary-container">7,126 대</div>
+<span class="font-label-caps text-label-caps text-secondary font-bold">0.7%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2030 Milestone Gauge Tracker -->
+<div class="mt-space-md pt-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md font-bold text-primary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">flag</span>
+              2030 현대자동차 중장기 전동화 목표 트래커
+            </span>
+<span class="font-label-caps text-label-caps font-bold text-secondary">목표: 330만 대 (전체 판매의 60%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-3 rounded-full relative overflow-hidden flex">
+<!-- Current ~29.1% of target 3.3m -->
+<div class="h-full bg-primary-container" style="width: 29.1%;"></div>
+<div class="h-full bg-secondary" style="width: 8%;"></div>
+</div>
+<div class="flex justify-between items-center text-label-caps font-label-caps text-on-surface-variant mt-1.5">
+<span>현재 실적: 96.1만 대 (달성도 29.1%)</span>
+<span>2027 중기 브릿지: 200만 대</span>
+<span class="font-bold text-primary-container">2030 최종 목표: 330만 대</span>
+</div>
+</div>
+</div>
+<!-- Chart 2: Scope 1, 2, 3 Emissions Flowchart Diagram -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-1 h-5 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-label-caps text-primary-container font-bold tracking-wider">PILLAR E • INFOGRAPHIC 02</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-semibold">2045 탄소중립 로드맵</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary-container mb-space-xs">온실가스 Scope 1 • 2 • 3 밸류체인 배출 아키텍처</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">원자재 채굴부터 사업장 제조공정, 그리고 20만 km 운행 단계(Category 11)까지의 단계별 감축 경로</p>
+<!-- Flowchart Graphic System -->
+<div class="space-y-space-sm">
+<!-- Scope 1 & 2 Block -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-bold text-label-md">S1·2</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary-container">사업장 직접 • 간접 배출량 (Scope 1 &amp; Scope 2)</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">2030 목표: -42%</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-0.5">글로벌 생산공장 내 LNG 가스 연소, 열원, 외부 구매 전력 및 스팀</p>
+</div>
+</div>
+<div class="text-right sm:pl-4">
+<span class="font-label-caps text-label-caps text-secondary font-bold">주요 실행 수단</span>
+<p class="font-label-md text-label-md text-primary-container font-semibold">글로벌 RE100 직간접 PPA</p>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs grid grid-cols-3 gap-2 text-center text-label-caps font-label-caps">
+<div class="bg-surface-container-lowest p-1.5 rounded">기준연도 (2019) 100%</div>
+<div class="bg-primary-container text-on-primary p-1.5 rounded font-bold">2030년: 58% (-42%)</div>
+<div class="bg-secondary-container text-on-secondary-container p-1.5 rounded font-bold">2040년: RE100 100%</div>
+</div>
+</div>
+<!-- Flow Connecting Arrow Down -->
+<div class="flex justify-center -my-1 text-on-surface-variant opacity-40">
+<span class="material-symbols-outlined text-[20px]">keyboard_double_arrow_down</span>
+</div>
+<!-- Scope 3 Value Chain Block -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-on-secondary font-bold text-label-md">S3</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary-container">공급망 &amp; 사용단계 (Scope 3 - Category 11 핵심)</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">2035 목표: -63%</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-0.5">차량 출고 후 생애주기 총 주행(평균 200,000km) 연소 배출 • 공급망 구매 제품</p>
+</div>
+</div>
+<div class="text-right sm:pl-4">
+<span class="font-label-caps text-label-caps text-secondary font-bold">전체 배출 비중</span>
+<p class="font-headline-sm text-headline-sm font-bold text-primary-container">80%+<span class="text-label-caps text-on-surface-variant ml-0.5">차지</span></p>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs grid grid-cols-3 gap-2 text-center text-label-caps font-label-caps">
+<div class="bg-surface-container-lowest p-1.5 rounded">ZPO 저탄소 강재 도입</div>
+<div class="bg-secondary text-on-secondary p-1.5 rounded font-bold">2035년: 37% (-63%)</div>
+<div class="bg-primary-container text-on-primary p-1.5 rounded font-bold">2045년: NET-ZERO</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Net-Zero Banner -->
+<div class="mt-space-md flex items-center justify-between p-space-sm rounded-lg bg-primary-container text-on-primary">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">eco</span>
+<span class="font-label-lg text-label-lg font-bold">2045 현대자동차 글로벌 사업장 &amp; 밸류체인 완전 탄소중립 선언</span>
+</div>
+<span class="font-label-caps text-label-caps bg-secondary px-2 py-1 rounded text-on-secondary font-bold">SBTi 공인 로드맵</span>
+</div>
+</div>
+</section>
+<!-- 3. Chart 3: Global RE100 Regional Attainment & Large Energy Transitions -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="w-1 h-5 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider">PILLAR E • INFOGRAPHIC 03</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary-container">글로벌 RE100 권역별 이행률 및 대규모 PPA 전략 현황</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">2045 글로벌 RE100 달성을 목표로, 해외 선진 권역의 100% 조기 달성과 국내 최대 규모 재생에너지 공급망 계약(PPA)을 병행하고 있습니다.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md pt-space-xs">
+<!-- Region 1: Europe -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-primary-container">체코 / 유럽 생산법인</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<div class="font-stat-metric text-stat-metric text-secondary font-bold">100<span class="text-label-lg font-normal text-on-surface-variant ml-1">%</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">HMMC 공장 100% 재생에너지 전력 수급 지속 달성</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">100% RE100 검증</span>
+</div>
+</div>
+<!-- Region 2: North America -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-primary-container">미국 / 북미 권역</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<div class="font-stat-metric text-stat-metric text-secondary font-bold">100<span class="text-label-lg font-normal text-on-surface-variant ml-1">%</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">HMMA 및 주요 법인 전력 100% 친환경 전환 달성</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">100% RE100 검증</span>
+</div>
+</div>
+<!-- Region 3: India -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-primary-container">인도 법인 (HMI)</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<div class="font-stat-metric text-stat-metric text-secondary font-bold">100<span class="text-label-lg font-normal text-on-surface-variant ml-1">%</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">첸나이 공장 등 재생에너지 PPA 결합 100% 조기 완성</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">100% RE100 검증</span>
+</div>
+</div>
+<!-- Region 4: Korea PPA Anchor -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-primary-container">국내 사업장 (울산·아산·전주)</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">bolt</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-primary-container">444 MW <span class="text-label-caps text-secondary font-bold">PPA</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">연간 610 GWh 친환경 전력 조달 • 온실가스 28만 톤 감축</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mb-1">
+<div class="bg-primary-container h-full rounded-full" style="width: 52%;"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-bold">국내 최대 민간 태양광 PPA 체결</span>
+</div>
+</div>
+<!-- Region 5: HMGMA Georgia Megasite -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-primary-container">조지아 메타플랜트 (HMGMA)</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">solar_power</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-primary-container">147 MW <span class="text-label-caps text-secondary font-bold">SOLAR</span></div>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1">현대차 단독 75MW 지분 확보 • 가동 시점 100% 청정에너지 가동</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-bold">2025 전동화 거점 본격 가동</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Mid Section: Supply Chain Due Diligence (EU CSDDD) & Double Materiality Matrix -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Chart 4: Supply Chain ESG Due Diligence Pipeline -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-1 h-5 rounded-full bg-primary-fixed-dim"></span>
+<span class="font-label-caps text-label-caps text-primary-container font-bold tracking-wider">PILLAR S • INFOGRAPHIC 04</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-semibold">EU 공급망 실사지침(CSDDD) 선제 대응</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary-container mb-space-xs">글로벌 공급망 인권 • 환경 실사 파이프라인 (Due Diligence)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">원자재 채굴 광산부터 1•2차 협력사, 글로벌 47개 사업장에 이르는 강제노동 및 환경 리스크 완결 체계</p>
+<!-- 4-Step Pipeline Layout -->
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-space-xs">
+<!-- Step 1: Upstream -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-bold">STAGE 01</span>
+<h4 class="font-label-md text-label-md font-bold text-primary-container mt-1">원자재 및 광산</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">DRC 코발트/구리, 인도네시아 니켈 공급망 투명성 추적</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps font-bold">RMI 가이드라인</span>
+</div>
+</div>
+<!-- Step 2: 1/2차 협력사 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold">STAGE 02</span>
+<h4 class="font-label-md text-label-md font-bold text-primary-container mt-1">협력사 실사 평가</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1"><strong class="text-primary-container">2,086개사</strong> 서면진단 • <strong class="text-primary-container">127개사</strong> 현장 방문 실사</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">위험도 정밀 스크리닝</span>
+</div>
+</div>
+<!-- Step 3: 개선 조치 완결 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold">STAGE 03</span>
+<h4 class="font-label-md text-label-md font-bold text-primary-container mt-1">개선 과제 완결</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">도출된 취약 지점 <strong class="text-secondary font-bold">25개 과제</strong> 조치율 100% 완료</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps font-bold">조치 완결률 100%</span>
+</div>
+</div>
+<!-- Step 4: 자체 사업장 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary-container font-bold">STAGE 04</span>
+<h4 class="font-label-md text-label-md font-bold text-primary-container mt-1">글로벌 사업장</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1"><strong class="text-primary-container">47개 시설</strong> 인권 실사 점검 • 무노동 무인 인권 침해 제로화</p>
+</div>
+<div class="mt-space-md pt-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-caps text-label-caps font-bold">EU CSDDD 적합</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Compliance & Automation Guarantee Strip -->
+<div class="mt-space-md bg-surface-container-low p-space-md rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-bold text-primary-container">AI 기반 강제 노동 • 공급망 리스크 스크리닝 체계 운영</div>
+<div class="font-label-md text-label-md text-on-surface-variant">북미 UFLPA 및 유럽 공급망 실사 규제에 최적화된 협력사 상시 모니터링 체제 구축</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span class="font-label-caps text-label-caps font-bold text-secondary">공급망 감사 완료</span>
+</div>
+</div>
+</div>
+<!-- Chart 5: Double Materiality (이중 중대성) 2x2 Flow Infographic -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-1 h-5 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-wider">PILLAR G • INFOGRAPHIC 05</span>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-semibold">GRI / CSRD 정합</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary-container mb-space-xs">이중 중대성 평가 매트릭스 (Double Materiality)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">기업이 환경•사회에 미치는 영향(Inside-Out)과 외부 리스크가 기업 재무에 미치는 영향(Outside-In)의 교차 분석</p>
+<!-- 2x2 Matrix Container -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low p-space-sm rounded-xl relative">
+<!-- Quadrant 1: High Impact & High Financial (Top Priority) -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg border-l-4 border-l-secondary flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary font-bold">INSIDE-OUT 핵심</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<h4 class="font-label-md text-label-md font-bold text-primary-container mt-1">기후변화 완화 및 전동화 전환</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">전동화 라인업 60% 확대 및 수소 생태계 확장</p>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-bold mt-2">최우선 과제 (Tier 1)</span>
+</div>
+<!-- Quadrant 2: High Financial Risk -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg border-l-4 border-l-primary-container flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary-container font-bold">OUTSIDE-IN 재무 영향</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<h4 class="font-label-md text-label-md font-bold text-primary-container mt-1">EV 캐즘(Chasm) • 규제 벌금</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">전기차 단기 수요 둔화 및 탄소배출권 규제 리스크</p>
+</div>
+<span class="font-label-caps text-label-caps text-primary-container font-bold mt-2">HEV 유연생산 방어</span>
+</div>
+<!-- Quadrant 3: Social & Safety Impact -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg border-l-4 border-l-outline flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant font-bold">사회적 책임</span>
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+</div>
+<h4 class="font-label-md text-label-md font-bold text-primary-container mt-1">고객 안전 및 임직원 중대재해 제로</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">IIHS 안전도 석권 및 안전보건 경영 체계 고도화</p>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant font-bold mt-2">상시 핵심 관리</span>
+</div>
+<!-- Quadrant 4: 2026 Newly Added Issue -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg border-l-4 border-l-tertiary-fixed-dim flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary font-bold">2026 신규 중대 이슈</span>
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+</div>
+<h4 class="font-label-md text-label-md font-bold text-primary-container mt-1">지정학적 에너지 안보 • 청정 원료</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">글로벌 무역 분쟁 대응 및 공급망 탈탄소 규제 적합성</p>
+</div>
+<span class="font-label-caps text-label-caps text-secondary font-bold mt-2">신규 모니터링 편입</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-label-caps font-label-caps text-on-surface-variant flex items-center justify-between">
+<span>* 중대성 평가 설문 및 재무 영향 평가 12,000+ 이해관계자 데이터 반영</span>
+<span class="font-bold text-secondary">CSDDD • CSRD 연계</span>
+</div>
+</div>
+</section>
+<!-- 5. Chart 6: Governance & Incentive Alignment Matrix -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="w-1 h-5 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-label-caps text-primary-container font-bold tracking-wider">PILLAR G • INFOGRAPHIC 06</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary-container">이사회 지속가능경영 거버넌스 및 경영진 ESG 인센티브 연계 체계</h3>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md px-3 py-1 rounded-full bg-surface-container text-primary-container font-bold">독립 사외이사 비율 87.5%</span>
+<span class="font-label-md text-label-md px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-bold">여성 이사 비율 33%</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Board Composition Architecture -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary-container font-bold">BOARD DIVERSITY &amp; INDEPENDENCE</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary-container mt-1">지속가능경영위원회 구성 구조</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-md">ESG 최고 심의 기구로서 독립적인 의사결정 권한과 선임 사외이사제 및 컴플라이언스 총괄 체제 확립</p>
+<div class="space-y-space-xs">
+<div class="p-space-xs bg-surface-container-lowest rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">groups</span>
+<span class="font-label-md text-label-md font-bold text-primary-container">총 위원 수</span>
+</div>
+<div class="font-label-lg text-label-lg font-bold text-primary-container">총 8인 (사외이사 7인 / 사내이사 1인)</div>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">female</span>
+<span class="font-label-md text-label-md font-bold text-primary-container">여성 사외이사</span>
+</div>
+<div class="font-label-lg text-label-lg font-bold text-secondary">전체 이사회 33.3% (4인 / 총 12인)</div>
+</div>
+<div class="p-space-xs bg-surface-container-lowest rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">balance</span>
+<span class="font-label-md text-label-md font-bold text-primary-container">선임 사외이사 제도</span>
+</div>
+<div class="font-label-lg text-label-lg font-bold text-primary-container">사외이사 주관 별도 회의체 정례화</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-outline-variant/30 flex items-center justify-between text-label-caps font-label-caps text-on-surface-variant">
+<span>TCFD 권고안 연계 이사회 보고 주기</span>
+<span class="font-bold text-primary-container">분기별 1회 이상 정기 의안 상정</span>
+</div>
+</div>
+<!-- Executive ESG KPI Incentive Linkage Card & Table -->
+<div class="lg:col-span-7 bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-caps text-label-caps text-secondary font-bold">COMPENSATION ALIGNMENT</span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-bold">성과급 직결 (최대 20~30% 반영)</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary-container">경영진 직무별 ESG KPI 인센티브 연계 체계</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 mb-space-md">최고경영자(CEO)부터 해외 권역장, 국내외 공장장에 이르기까지 실질적인 탄소감축 및 안전 지표를 성과급에 직접 연계</p>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-lowest text-on-surface-variant font-label-caps text-label-caps">
+<th class="py-2.5 px-3 rounded-l">직책 / 대상</th>
+<th class="py-2.5 px-3">연계 핵심 ESG 지표 (KPIs)</th>
+<th class="py-2.5 px-3">반영 비중</th>
+<th class="py-2.5 px-3 rounded-r">2025 평가 결과</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-label-md text-label-md">
+<tr class="hover:bg-surface-container-lowest/50 transition-colors">
+<td class="py-2.5 px-3 font-bold text-primary-container">대표이사 (CEO)</td>
+<td class="py-2.5 px-3 text-on-surface-variant">글로벌 친환경차 판매 비중 • 온실가스 원단위 감축 • 중대재해 Zero</td>
+<td class="py-2.5 px-3 font-bold text-primary-container">25%</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold text-[11px]">104% 초과 달성</span></td>
+</tr>
+<tr class="hover:bg-surface-container-lowest/50 transition-colors">
+<td class="py-2.5 px-3 font-bold text-primary-container">글로벌 권역본부장</td>
+<td class="py-2.5 px-3 text-on-surface-variant">권역별 EV/HEV 침투율 • 관할 사업장 RE100 이행률 • 공급망 실사 점검</td>
+<td class="py-2.5 px-3 font-bold text-primary-container">20%</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold text-[11px]">우수 (북미/유럽 100%)</span></td>
+</tr>
+<tr class="hover:bg-surface-container-lowest/50 transition-colors">
+<td class="py-2.5 px-3 font-bold text-primary-container">국내/해외 생산공장장</td>
+<td class="py-2.5 px-3 text-on-surface-variant">공장별 Scope 1•2 에너지 절감 • 협력사 상생 안전평가 • 폐기물 재활용률</td>
+<td class="py-2.5 px-3 font-bold text-primary-container">30%</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded bg-surface-container text-primary-container font-bold text-[11px]">목표 정상 부합</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Bottom Social & CSV Highlights Bar -->
+<section class="bg-primary-container text-on-primary p-space-lg rounded-xl shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md border-b border-on-primary/10 pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary flex items-center justify-center text-on-secondary font-bold">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-primary">소셜 임팩트 • CSV 글로벌 평판 하이라이트</h4>
+<span class="font-label-caps text-label-caps text-secondary-fixed">GLOBAL SOCIAL EXCELLENCE RECORD</span>
+</div>
+</div>
+<div class="font-label-md text-label-md text-secondary-fixed">
+          인재 중심 경영 • 고객 안전 보장 • 미래 세대 동행
+        </div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<!-- Social 1: Safety & Quality -->
+<div class="bg-primary/40 p-space-sm rounded-lg backdrop-blur-sm">
+<div class="flex items-center gap-1.5 text-secondary-fixed font-label-caps text-label-caps mb-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>J.D. POWER • IIHS</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-on-primary">#2 글로벌</div>
+<p class="font-label-md text-label-md text-primary-fixed mt-1">J.D. Power 신차품질조사(IQS) 전 세계 2위 달성 • IIHS 최고안전등급(TSP/TSP+) 16개 차종 석권 (현대차그룹 합산 21개)</p>
+</div>
+<!-- Social 2: Hope on Wheels -->
+<div class="bg-primary/40 p-space-sm rounded-lg backdrop-blur-sm">
+<div class="flex items-center gap-1.5 text-secondary-fixed font-label-caps text-label-caps mb-1">
+<span class="material-symbols-outlined text-[16px]">volunteer_activism</span>
+<span>HOPE ON WHEELS</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-secondary-fixed">$320,000,000</div>
+<p class="font-label-md text-label-md text-primary-fixed mt-1">미국 소아암 퇴치 기금 누적 3억 2,000만 달러 조성 • 27년 지속 북미 대표 사회공헌 캠페인</p>
+</div>
+<!-- Social 3: Retention & Culture -->
+<div class="bg-primary/40 p-space-sm rounded-lg backdrop-blur-sm">
+<div class="flex items-center gap-1.5 text-secondary-fixed font-label-caps text-label-caps mb-1">
+<span class="material-symbols-outlined text-[16px]">person_check</span>
+<span>EMPLOYEE RETENTION</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-on-primary">3.2<span class="text-label-lg font-normal ml-0.5">%</span></div>
+<p class="font-label-md text-label-md text-primary-fixed mt-1">글로벌 자발적 이직률 기존 6.8%에서 3.2%로 절반 이하 대폭 개선 • 유연근무 및 다양성 문화 정착</p>
+</div>
+<!-- Social 4: Time 100 -->
+<div class="bg-primary/40 p-space-sm rounded-lg backdrop-blur-sm">
+<div class="flex items-center gap-1.5 text-secondary-fixed font-label-caps text-label-caps mb-1">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+<span>GLOBAL RANKING</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-secondary-fixed">세계 33위</div>
+<p class="font-label-md text-label-md text-primary-fixed mt-1">Time지 • Statista 공동 선정 '세계 최고 기업 (World’s Best Companies)' 33위 랭크 (완성차 중 최상위권)</p>
+</div>
+</div>
+</section>
+<!-- Verification Footnote & Live Intelligence Terminal -->
+<div class="w-full flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-caps text-label-caps py-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-secondary font-bold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+          데이터 무결성 암호화 검증 완료
+        </span>
+<span>•</span>
+<span>최종 데이터 동기화: 2025-Q4 종합 집계</span>
+</div>
+<div class="mt-2 sm:mt-0 flex items-center gap-space-md">
+<span>GRI 305 • SASB TR-AU • TCFD Pillar Matrix 호환</span>
+<button class="text-primary-container font-bold hover:underline flex items-center gap-1" onclick="window.print()">
+<span class="material-symbols-outlined text-[14px]">print</span>
+          현 화면 인쇄 / PDF 저장
+        </button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="w-full px-gutter lg:px-margin"><div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg pb-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm font-bold text-primary-container">HYUNDAI</span><span class="font-label-caps text-label-caps px-space-xs py-space-xs bg-secondary-container text-on-secondary-container rounded">SUSTAINABLE HORIZON 2045</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">현대자동차는 글로벌 지속가능경영 표준(GRI, SASB, TCFD, ISSB)에 입각하여 투명하고 검증된 ESG 데이터와 인포그래픽 인사이트를 제공합니다.</p></div><div class="flex flex-wrap items-center gap-space-md font-label-md text-label-md text-on-surface-variant"><span>RE100 가입 검증 완료</span><span>Scope 1·2·3 3자 검증</span><span>탄소중립 로드맵 2045</span></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-caps text-label-caps"><div>© 2025 HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</div><div>ESG DATA &amp; INFOGRAPHIC INTELLIGENCE PLATFORM v4.2</div></div></div></footer></body></html>
